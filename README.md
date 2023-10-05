@@ -11,13 +11,13 @@ Before using this snippet, verify you've met with the following requirements:
 
 This code snippet executes the following tasks:
 
-1. Define a hash table `$formObject`. The keys of the hash table represent the properties to create an incident, while the values represent the values entered in the form.
+1. Define a hash table `$formObject`. The keys of the hash table represent the properties to create an incident, while the values represent the values entered in the form. [See the ServiceNow API documentation](https://developer.servicenow.com/dev.do#!/reference/api/sandiego/rest/c_TableAPI#table-POST)
 
 > To view an example of the form output, please refer to the JSON code pasted below.
 
 ```json
 {
-    "caller_id": "johndoe",
+    "UserIdentity": "johndoe",
     "urgency": "1",
     "description": "Example inident",
     "short_description": "Example"
